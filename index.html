@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset=utf-8>
+<meta name="viewport" content="width=220">
+<title>DAH Test 3: HTML5 with JS: Pic App</title>
+
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/jquery-ui.css" />
+
+<script src="js/jquery.js"></script>
+<script src="js/h5utils.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+</head>
+<body>
+<section id="wrapper">
+
+
+<div class="well">
+    <header>
+      <h1>BGSNav2</h1>
+    </header>
+</div>
+<article>
+
+  
+  
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Staff</a></li>
+    <li><a href="#tabs-2">Diary</a></li>
+    <li><a href="#tabs-3">Images</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+  </div>
+  <div id="tabs-2">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+  <div id="tabs-3">
+    <section>
+  <div class="row">
+    
+<button onClick="action();"><img src="img/1.png" width="100px" id="ImageButton1"></button>
+  </div>
+  
+  </section>
+    
+  </div>
+</div>
+
+  
+  
+</article>
+
+
+
+ 
+ 
+</body>
+</html>
+<!-- JS Code to enable tabs 
+ <script>
+$('ul.nav.nav-pills li a').click(function() {           
+    $(this).parent().addClass('active').siblings().removeClass('active');           
+});
+ </script>
+-->
+  <script>
+$('ul.nav.nav-pills li a').click(function() {           
+    $(this).parent().addClass('active');
+	$('.tab-pane.tab1').hide();
+
+           
+});
+ </script>
+
+
+ <!-- JS Code to enable tabs 
+
+  <script>
+  $(function() {
+    $( "#tabs" ).tab();
+  });
+   <script>
+   
+   
+   <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        $('#tabs').tab();
+    });
+</script> 
+<!-- Image Swap JS Code -->
+<script>
+function action()
+{
+if((document.getElementById("ImageButton1").src.indexOf("1.png"))>=0)
+document.getElementById("ImageButton1").src = "file:///C:/Web_App_DAH_Test3/www/img/2.jpg";
+else
+document.getElementById("ImageButton1").src = "file:///C:/Web_App_DAH_Test3/www/img/1.png";
+}
+</script>    
+</section>
+
+</body>
+</html>
